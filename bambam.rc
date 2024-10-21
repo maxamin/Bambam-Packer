@@ -1,0 +1,303 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 213, 49
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+EXSTYLE WS_EX_TOOLWINDOW
+CAPTION "About..."
+FONT 8, "Tahoma"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,160,33,50,14,WS_GROUP
+    GROUPBOX        "",IDC_STATIC,3,0,207,30
+    LTEXT           "bambam v0.04 Build date: March 23, 2005. All rights reserved.",
+                    IDC_STATIC,7,7,202,8
+    LTEXT           "Copyright © 2005 by bedrock.",IDC_STATIC,7,17,99,8
+END
+
+IDD_MAIN_DIALOG DIALOGEX 0, 0, 255, 94
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_TOOLWINDOW | WS_EX_APPWINDOW
+CAPTION "bambam v0.04"
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    CONTROL         "Tab1",IDC_TAB,"SysTabControl32",0x0,1,1,254,93
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 0,0,4,1
+ PRODUCTVERSION 0,0,4,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "bambam\0"
+            VALUE "FileVersion", "0, 0, 4, 1\0"
+            VALUE "InternalName", "bambam\0"
+            VALUE "LegalCopyright", "Copyright (C) 2005\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "bambam.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "bambam\0"
+            VALUE "ProductVersion", "0, 0, 4, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_MAIN_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 248
+        TOPMARGIN, 1
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.K.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENG)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_UK
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_COMPRESS_DIALOG DIALOG DISCARDABLE  0, 0, 254, 82
+STYLE DS_CONTROL | WS_CHILD | WS_BORDER
+FONT 8, "Tahoma"
+BEGIN
+    EDITTEXT        IDC_SOURCE_FILE,27,12,160,12
+    PUSHBUTTON      "Open File",IDC_BROWSE,192,11,50,14
+    PUSHBUTTON      "Compress",IDC_COMPRESS,192,34,50,14
+    PUSHBUTTON      "Exit",IDC_EXIT,192,56,50,14
+    LTEXT           "File: ",IDC_STATIC,8,14,16,8
+    CONTROL         "Progress1",IDC_COMP_PROGRESS,"msctls_progress32",
+                    PBS_SMOOTH,8,40,179,7
+    LTEXT           "Compression Progress: ",IDC_STATIC,8,28,76,8
+    LTEXT           "Compressed File Size: ",IDC_STATIC,8,51,72,8
+    CONTROL         "Progress1",IDC_COMP_SIZE,"msctls_progress32",PBS_SMOOTH,
+                    8,62,179,7
+    LTEXT           "100.0%",IDC_FILE_SIZE,81,51,30,8
+    LTEXT           "100.0%",IDC_COMP_PROG,85,28,30,8
+    GROUPBOX        "Target",IDC_STATIC,1,2,245,73
+END
+
+IDD_OPTIONS_DIALOG DIALOG DISCARDABLE  0, 0, 252, 81
+STYLE DS_CONTROL | WS_CHILD
+FONT 8, "Tahoma"
+BEGIN
+    CONTROL         "Create backup copy",IDC_BACKUP,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,133,15,80,10
+    CONTROL         "Remove .reloc section",IDC_REMOVE_RELOC,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,133,28,87,10
+    CONTROL         "Realign file",IDC_REALIGN,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,133,42,87,10
+    EDITTEXT        IDC_SECTION_NAME,183,57,40,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "@",IDC_RANDOM,225,56,17,14
+    LTEXT           "Section name: ",IDC_STATIC,132,59,50,8
+    GROUPBOX        "Protection",IDC_STATIC,1,2,120,73
+    GROUPBOX        "Misc",IDC_STATIC,126,2,120,73
+    CONTROL         "Protection 1",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,9,15,55,10
+    CONTROL         "Protection 2",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,9,28,55,10
+    CONTROL         "Protection 3",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,9,42,55,10
+    CONTROL         "Protection 4",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | NOT 
+                    WS_VISIBLE | WS_TABSTOP,9,56,55,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_COMPRESS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 252
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 80
+    END
+
+    IDD_OPTIONS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 250
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 79
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\bambam.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\bedrock.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// BINARY
+//
+
+IDR_STUB                BINARY  DISCARDABLE     "..\\Stub\\Release\\Stub.dll"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// RT_RCDATA
+//
+
+IDR_XM_MOD              RT_RCDATA DISCARDABLE   "res\\shock.XM"
+#endif    // English (U.K.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\bambam.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
