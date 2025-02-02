@@ -46,16 +46,6 @@ This project is licensed under the [MIT License](LICENSE).
 For any questions or issues, please reach out to the maintainers:
 
 - [Mail](mailto:4stalkers@protonmail.com)
-
-## Acknowledgments
-
-Customization Tips
-
-    Project Description: Fill in the primary functionality and key features of your application.
-    Requirements: Specify any software dependencies, operating systems, or specific configurations needed.
-    Installation Instructions: If there are any specific steps for building or installing the application, detail them here.
-    Usage Instructions: Provide clear instructions on how to use the application, including any necessary configurations.
-    Contributing Guidelines: If you have specific guidelines for contributions, add them here.
     License: Make sure to link to your actual license file if applicable.
     Contact Information: Include your email or other ways for users to reach you for support or inquiries.
 
