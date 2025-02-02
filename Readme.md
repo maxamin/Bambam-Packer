@@ -1,6 +1,6 @@
 # BAMBAM
 
-BAMBAM is a Windows-based application designed for [insert primary functionality, e.g., file compression, audio processing, etc.]. The application features a user-friendly interface that allows users to [insert key functionalities, e.g., compress files, manage settings, view logs, etc.]. 
+BAMBAM is a Windows-based application designed for Packing. The application features a user-friendly interface that allows users to Pack binaries
 
 ## Features
 
@@ -11,15 +11,8 @@ BAMBAM is a Windows-based application designed for [insert primary functionality
 
 ## Requirements
 
-- Windows [specify version, e.g., Windows 10 or later]
-- Microsoft Visual C++ Redistributable [insert version if necessary]
-- [Any other dependencies or requirements]
-
-## Installation
-
-1. Download the latest release from the [Releases](link_to_releases) page.
-2. Extract the contents of the ZIP file.
-3. Run `bambam.exe` to launch the application.
+- Windows 
+- Microsoft Visual C++ Redistributable 
 
 ## Usage
 
@@ -53,12 +46,8 @@ This project is licensed under the [MIT License](LICENSE).
 For any questions or issues, please reach out to the maintainers:
 
 - [Mail](mailto:4stalkers@protonmail.com)
-- [Other Maintainers' Contact Info]
 
 ## Acknowledgments
-
-- Thanks to [any libraries or frameworks used, if applicable].
-- Special thanks to [any individuals or organizations that helped].
 
 Customization Tips
 
